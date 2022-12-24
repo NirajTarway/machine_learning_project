@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 from typing import List
 
 
@@ -8,10 +8,10 @@ def get_requirement_list() -> List[str]:
 
 
 PROJECT_NAME = 'Housing Predictor'
-VERSION = '0.0.1'
+VERSION = '0.0.3'
 AUTHOR = 'Niraj Tarway'
 DESCRIPTION = 'creating a housing price predictor'
-PACKAGES = ['housing']
+PACKAGES = find_packages()  # ['housing'] needed when not using find_packages()
 REQUIREMENT_FILE = 'requirements.txt'
 
 setup(
